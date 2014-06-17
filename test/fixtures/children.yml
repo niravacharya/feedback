@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  child_age: 1
+  child_DOB: 2014-06-13 16:24:40
+  customer_feedback_id: 1
+
+two:
+  child_age: 1
+  child_DOB: 2014-06-13 16:24:40
+  customer_feedback_id: 1

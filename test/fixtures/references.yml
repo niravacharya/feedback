@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  contact_no: 1
+  relation: MyString
+  customer_feedback_id: 1
+
+two:
+  name: MyString
+  contact_no: 1
+  relation: MyString
+  customer_feedback_id: 1

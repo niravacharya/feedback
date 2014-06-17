@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fd: 1
+  market: 1
+  gold: 1
+  real_estate: 1
+  customer_feedback_id: 1
+
+two:
+  fd: 1
+  market: 1
+  gold: 1
+  real_estate: 1
+  customer_feedback_id: 1

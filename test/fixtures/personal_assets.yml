@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  house_owned: false
+  house_rented: false
+  house_co_providede: false
+  4_wheeler: false
+  no_of_4_wheeler: 1
+  2_wheeler: false
+  no_of_2_wheelers: 1
+  no_vehical: false
+  customer_feedback_id: 1
+
+two:
+  house_owned: false
+  house_rented: false
+  house_co_providede: false
+  4_wheeler: false
+  no_of_4_wheeler: 1
+  2_wheeler: false
+  no_of_2_wheelers: 1
+  no_vehical: false
+  customer_feedback_id: 1

@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  address: MyString
+  pincode: 1
+  mobile_number: 1
+  phone_no: 1
+  email: MyString
+  education: MyString
+  occupation: MyString
+  jobpost: MyString
+  Name_of_company: MyString
+  experience: 1
+  income: 1
+  economical_liability: 1
+  number_of_child: 1
+  years_intend_to_work: MyString
+  short_term_goals: 1
+  long_term_goals: 1
+  age_of_retirement: 1
+
+two:
+  name: MyString
+  address: MyString
+  pincode: 1
+  mobile_number: 1
+  phone_no: 1
+  email: MyString
+  education: MyString
+  occupation: MyString
+  jobpost: MyString
+  Name_of_company: MyString
+  experience: 1
+  income: 1
+  economical_liability: 1
+  number_of_child: 1
+  years_intend_to_work: MyString
+  short_term_goals: 1
+  long_term_goals: 1
+  age_of_retirement: 1
