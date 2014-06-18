@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20140613105514) do
 
   create_table "children", :force => true do |t|
     t.integer  "child_age"
-    t.datetime "child_DOB"
+    t.datetime "child_dob"
     t.integer  "customer_feedback_id"
     t.datetime "created_at",           :null => false
     t.datetime "updated_at",           :null => false
@@ -32,17 +32,18 @@ ActiveRecord::Schema.define(:version => 20140613105514) do
     t.string   "education"
     t.string   "occupation"
     t.string   "jobpost"
-    t.string   "Name_of_company"
+    t.string   "name_of_company"
     t.integer  "experience"
     t.integer  "income"
     t.integer  "economical_liability"
     t.integer  "number_of_child"
+    t.datetime "client_anniversary_date"
     t.string   "years_intend_to_work"
     t.integer  "short_term_goals"
     t.integer  "long_term_goals"
     t.integer  "age_of_retirement"
-    t.datetime "created_at",           :null => false
-    t.datetime "updated_at",           :null => false
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
   end
 
   create_table "investments", :force => true do |t|
@@ -58,7 +59,7 @@ ActiveRecord::Schema.define(:version => 20140613105514) do
   create_table "personal_assets", :force => true do |t|
     t.boolean  "house_owned"
     t.boolean  "house_rented"
-    t.boolean  "house_co_providede"
+    t.boolean  "house_co_provided"
     t.boolean  "four_wheeler"
     t.integer  "no_of_four_wheeler"
     t.boolean  "two_wheeler"

@@ -11,11 +11,12 @@ class CreateCustomerFeedbacks < ActiveRecord::Migration
       t.string :education
       t.string :occupation
       t.string :jobpost
-      t.string :Name_of_company
+      t.string :name_of_company
       t.integer :experience
       t.integer :income
       t.integer :economical_liability
       t.integer :number_of_child
+      t.timestamp :client_anniversary_date
       t.string :years_intend_to_work
       t.integer :short_term_goals
       t.integer :long_term_goals

@@ -25,21 +25,15 @@ class CustomerFeedbacksController < ApplicationController
   # GET /customer_feedbacks/new.json
   def new
     @customer_feedback = CustomerFeedback.new
-    i = 4
-    @child= []
-    while(i>0)
-      @child[i] = Child.new
-      i= i-1
-    end
+
+    @child = Child.new
+
     @investment = Investment.new
     @planned = Planned.new
-    i = 4
-    @reference= []
-    while(i>0)
-      @reference[i] = Reference.new
-      i= i-1
-    end
-    @personal_assets = PersonalAssets.new
+
+    @reference = Reference.new
+
+    @perssonal_assets = PersonalAssets.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -50,12 +44,33 @@ class CustomerFeedbacksController < ApplicationController
   # GET /customer_feedbacks/1/edit
   def edit
     @customer_feedback = CustomerFeedback.find(params[:id])
+    @child = @customer_feedback.children
+    @perssonal_assets = @customer_feedback.personal_assets
+    @planned = @customer_feedback.planneds
+    @reference = @customer_feedback.references
   end
 
   # POST /customer_feedbacks
   # POST /customer_feedbacks.json
   def create
-    @customer_feedback = CustomerFeedback.new(params[:customer_feedback])
+    p @customer_feedback = params[:customer_feedback]
+    p @child = @customer_feedback[:child]
+    p @customer_feedback.delete(:child)
+    p @investment = @customer_feedback[:investment]
+    p @personal_assets = @customer_feedback[:personal_assets]
+    p @planned = @customer_feedback[:planned]
+    p @references = @customer_feedback[:reference]
+    p @customer_feedback.delete(:investment)
+    p @customer_feedback.delete(:personal_assets)
+    p @customer_feedback.delete(:planned)
+    p @customer_feedback.delete(:reference)
+
+    p @customer_feedback = CustomerFeedback.new(@customer_feedback)
+    p @child = @customer_feedback.children.build(@child)
+    p @personal_assets = @customer_feedback.personal_assets.build(@personal_assets)
+    p @planned = @customer_feedback.planneds.build(@planned)
+    p @reference = @customer_feedback.references.build(@reference)
+    p @investment = @customer_feedback.investments.build(@investment)
 
     respond_to do |format|
       if @customer_feedback.save
